@@ -8,7 +8,7 @@ ENV TZ=Australia/Sydney
 
 RUN set -x \
     && apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get --fix-missing -y install tzdata zip build-essential autoconf bison python vim git \
+    && DEBIAN_FRONTEND=noninteractive apt-get --fix-missing -y install tzdata zip build-essential autoconf bison python vim git strace gdb \
     && apt-get clean
 WORKDIR /
 ADD . /
