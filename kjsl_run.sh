@@ -1,8 +1,8 @@
 # Kev's build script
 HERE=$HOME
 
-IMAGE_STATE=$(docker images -q bash2py:latest 2> /dev/null)
-RUN_STATE=$(docker ps -qf "ancestor=bash2py")
+#IMAGE_STATE=$(docker images -q bash2py:latest 2> /dev/null)
+#RUN_STATE=$(docker ps -qf "ancestor=bash2py")
 
 create_docker_image () {
   if [[ "$IMAGE_STATE" == "" ]]; then
